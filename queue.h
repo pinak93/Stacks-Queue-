@@ -4,11 +4,12 @@
 
 class Queue { 
    private: 
-     Stack entering;
-	 Stack polling;
+     Stack *entering;
+	 Stack *polling;
    public: 
 	Queue();
-      void add(int const&); 
+	~Queue();
+      void add(int const&);   
       int poll();         
       int front(); 
       bool isempty();
