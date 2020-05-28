@@ -39,7 +39,7 @@ int main(){
 				break;
 			case 2:
 				try{
-					cout<<st->pop();
+					cout<<"Element Deleted : "<<st->pop()<<endl;
 				}
 				catch(char const* err){
 					string e(err);
@@ -57,7 +57,7 @@ int main(){
 				break;	
 			case 5:
 				try{
-					cout<<qu->poll();
+					cout<<"Element Deleted : "<<qu->poll()<<endl;
 				}
 				catch(char const* err){
 					string e(err);
