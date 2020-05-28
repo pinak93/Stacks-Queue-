@@ -13,5 +13,7 @@ class Queue {
       int poll();         
       int front(); 
       bool isempty();
+	  int size() const;
+	  void purge();
 };
 #endif

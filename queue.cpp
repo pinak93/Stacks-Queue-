@@ -52,4 +52,15 @@ int Queue::front(){
 bool Queue::isempty() { 
          return entering->isempty() && polling->isempty(); 
 }
+
+//This is Helper fucntion to check if the Queue is empty.
+void Queue::purge() { 
+         entering->purge();
+		 polling->purge();
+}
+
+//This is Helper fucntion to check if the Queue is empty.
+int Queue::size() const { 
+         return entering->size() + polling->size(); 
+}
 	

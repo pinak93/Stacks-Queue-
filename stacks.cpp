@@ -39,3 +39,14 @@ void Stack::push(int const& value){
 bool Stack::isempty() const { 
          return top==-1; 
 }
+
+///helper Function to see the size of Stack
+int Stack::size() const { 
+         return top+1; 
+}
+
+///Helper function to clear the stack
+void Stack::purge() { 
+         top=-1;
+		 stack.clear();
+}

@@ -12,5 +12,7 @@ class Stack {
       int pop();         
       int peek() const; 
       bool isempty() const;
+	  int size() const;
+	  void purge();
 };
 #endif
