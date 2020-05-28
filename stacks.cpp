@@ -23,12 +23,11 @@ All the operation is O(1) constant
 */
 int Stack::pop(){
 	if(isempty()) throw "Stack Empty";
-	
 	std::vector<int>::iterator it;  
 	it = stack.end();
+	int value = stack[top--];
 	stack.erase(--it);
-	
-	return stack[top--];
+	return value;
 }
 //Push the Element in the stack and increament the top index.
 void Stack::push(int const& value){
