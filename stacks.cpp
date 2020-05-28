@@ -3,6 +3,7 @@
 Stack::Stack(): top(-1){}
 
 int Stack::peek() const{
+	if(isempty()) throw "Stack Empty";
 	return stack[top];
 }
 
